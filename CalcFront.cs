@@ -118,6 +118,17 @@ namespace Calc
                         {
                             WriteLine(s);
                         }
+                        WriteLine("Vill du gå tillbaka till menyn? (j/n): ");
+                        string goBack = ReadLine();
+                        if (goBack == "j")
+                        {
+                            Clear();
+                            Menu();
+                        }
+                        else if (goBack == "n")
+                        {
+                            WriteLine("Tryck valfri tangent för att avsluta...");
+                        }
                         ReadKey();
                         break;
 
